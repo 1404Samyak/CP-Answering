@@ -1,0 +1,28 @@
+version: "0.0.2"
+
+metadata:
+  name: "cp-answering"
+  description: "This application can answer the query of user related to competitive programming"
+  author: "1404samyak"
+  tags: [RAG,writing,reading,cp]
+  private: false
+
+inputs:
+  question:
+    type: string
+    description: "Enter the question related to cp"
+    required: true
+    example: "Kindly explain about two pointer approach,Kindly explain about toposort"
+
+model:
+  provider: "openai"
+  name: "gpt-4o"
+
+dataset:
+  source: "1404samyak/cp-questions"
+
+prompt: |
+  You are a wonderful LLM model ,hence kindly answer the question {question} of user in a detailed and simple manner from the loaded document
+
+readme: |
+  This RAG application can answer any query of the user related to competitive programming
