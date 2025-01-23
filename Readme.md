@@ -1,1 +1,2 @@
 This repo can answer the questions of user related to competitive programming in any topic and clarify the doubts of user 
+This uses mira-sdk to create a RAG application where we can easily ingest large datasets and take response from model in context of the document
